@@ -21,7 +21,7 @@ def message():
 @app.get('/egg3Hunt/{lake}')
 def beeAPI(lake: str):
     if lake == 'lake_bee':
-        return {"message": "I accidentally sent the bee (API) to the wrong lake, {lake}... It needs to be at lake_goldenEgg. Could you correct the parameter and run the API again?" }
+        return {"message": f"I accidentally sent the bee (API) to the wrong lake({lake}) ... It needs to be at lake_goldenEgg. Could you correct the parameter and run the API again?" }
     elif lake == 'lake_goldenEgg':
         return {"message": "🐝: The golden egg will reach you at time 16:24!"}
     else:
